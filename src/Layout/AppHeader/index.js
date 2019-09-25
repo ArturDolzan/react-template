@@ -28,7 +28,7 @@ class Header extends React.Component {
                     transitionEnter={false}
                     transitionLeave={false}>
 
-                    {/* <HeaderLogo/> */}
+                    <HeaderLogo/>
 
                     <div className={cx(
                         "app-header__content",

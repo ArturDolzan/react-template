@@ -62,11 +62,11 @@ class AppMobileMenu extends React.Component {
 
                 <div className="app-header__mobile-menu">
                     <div onClick={this.toggleMobileSidebar}>
-                        <Hamburger
+                        {/* <Hamburger
                             active={enableMobileMenu}
                             type="elastic"
                             onClick={() => this.setState({activeMobile: !this.state.activeMobile})}
-                        />
+                        /> */}
                     </div>
                 </div>
                 <div className="app-header__menu">
