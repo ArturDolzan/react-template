@@ -9,6 +9,7 @@ import HeaderLogo from '../AppLogo';
 
 import SearchBox from './Components/SearchBox';
 import UserBox from './Components/UserBox';
+import { Link } from 'react-router-dom'
 
 class Header extends React.Component {
     render() {
@@ -17,6 +18,7 @@ class Header extends React.Component {
             enableMobileMenuSmall,
             enableHeaderShadow
         } = this.props;
+
         return (
             <Fragment>
                 <ReactCSSTransitionGroup
@@ -27,8 +29,10 @@ class Header extends React.Component {
                     transitionAppearTimeout={1500}
                     transitionEnter={false}
                     transitionLeave={false}>
-
-                    <HeaderLogo/>
+                    
+                    <Link to="/">
+                        <HeaderLogo/>
+                    </Link>
 
                     <div className={cx(
                         "app-header__content",

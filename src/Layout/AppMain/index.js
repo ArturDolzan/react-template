@@ -7,40 +7,30 @@ import {
 
 const Dashboards = lazy(() => import('../../DemoPages/Dashboards'));
 
-const Widgets = lazy(() => import('../../DemoPages/Widgets'));
-//const Elements = lazy(() => import('../../DemoPages/Elements'));
-//const Components = lazy(() => import('../../DemoPages/Components'));
-//const Forms = lazy(() => import('../../DemoPages/Forms'));
-//const Tables = lazy(() => import('../../DemoPages/Tables'));
+const Login = lazy(() => import('../../DemoPages/Login'));
 
 const AppMain = () => {
 
     return (
         <Fragment>
 
-            {/* Dashboard Widgets */}
-
             <Suspense fallback={
                 <div className="loader-container">
                     <div className="loader-container-inner">
                         <h6 className="mt-3">
-                            Please wait while we load all the Dashboard Widgets examples
-                            <small>Because this is a demonstration we load at once all the Dashboard Widgets examples. This wouldn't happen in a real live app!</small>
+                            Aguarde...
                         </h6>
                     </div>
                 </div>
             }>
-                <Route path="/widgets" component={Widgets}/>
+            <Route path="/login" component={Login}/>
             </Suspense>
-
-            {/* Dashboards */}
 
             <Suspense fallback={
                 <div className="loader-container">
                     <div className="loader-container-inner">
                         <h6 className="mt-3">
-                            Please wait while we load all the Dashboards examples
-                            <small>Because this is a demonstration, we load at once all the Dashboards examples. This wouldn't happen in a real live app!</small>
+                            Aguarde...
                         </h6>
                     </div>
                 </div>
@@ -51,6 +41,7 @@ const AppMain = () => {
             <Route exact path="/" render={() => (
                 <Redirect to="/dashboards/basic"/>
             )}/>
+            
             <ToastContainer/>
         </Fragment>
     )

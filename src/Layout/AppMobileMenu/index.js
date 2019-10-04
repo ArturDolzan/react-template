@@ -61,6 +61,7 @@ class AppMobileMenu extends React.Component {
             <Fragment>
 
                 <div className="app-header__mobile-menu">
+                {/* {enableMobileMenu && ({BOSTA})} */}
                     <div onClick={this.toggleMobileSidebar}>
                         {/* <Hamburger
                             active={enableMobileMenu}

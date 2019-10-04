@@ -1,5 +1,20 @@
 @charset "UTF-8";
 
+@media all and (min-width: 480px) {
+  .Login {
+    padding: 60px 0;
+  }
+
+  .Login form {
+    margin: 0 auto;
+    max-width: 320px;
+  }
+}
+
+.paddingLeft15pxUser {
+  padding-left: 15px;
+}
+
 .border-primary {
   border-color: #033C73; }
 
@@ -7962,6 +7977,7 @@ button,
   .app-header__logo .logo-src {
     height: 23px;
     width: 97px;
+    background-repeat: round !important;
     background: url("~assets/utils/images/logo-inverse.png"); }
 
 .app-header__menu,
@@ -8957,14 +8973,22 @@ button,
 
 .bg-strong-bliss {
   /* background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%) !important; */
-  background: rgba(69,199,104,1);
+  /* background: rgba(69,199,104,1);
   background-image: -moz-linear-gradient(left, rgba(69,199,104,1) 0%, rgba(123,214,77,1) 47%, rgba(134,214,60,1) 100%) !important;
   background-image: -webkit-gradient(left top, right top, color-stop(0%, rgba(69,199,104,1)), color-stop(47%, rgba(123,214,77,1)), color-stop(100%, rgba(134,214,60,1))) !important;
   background-image: -webkit-linear-gradient(left, rgba(69,199,104,1) 0%, rgba(123,214,77,1) 47%, rgba(134,214,60,1) 100%) !important;
   background-image: -o-linear-gradient(left, rgba(69,199,104,1) 0%, rgba(123,214,77,1) 47%, rgba(134,214,60,1) 100%) !important;
   background-image: -ms-linear-gradient(left, rgba(69,199,104,1) 0%, rgba(123,214,77,1) 47%, rgba(134,214,60,1) 100%) !important;
   background-image: linear-gradient(to right, rgba(69,199,104,1) 0%, rgba(123,214,77,1) 47%, rgba(134,214,60,1) 100%) !important;
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45c768', endColorstr='#86d63c', GradientType=1 ) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45c768', endColorstr='#86d63c', GradientType=1 ) !important; */
+  background: rgba(183,222,237,1);
+  background-image: -moz-linear-gradient(left, rgba(183,222,237,1) 0%, rgba(33,180,226,1) 51%, rgba(113,206,239,1) 78%, rgba(183,222,237,1) 100%) !important;
+  background-image: -webkit-gradient(left top, right top, color-stop(0%, rgba(183,222,237,1)), color-stop(51%, rgba(33,180,226,1)), color-stop(78%, rgba(113,206,239,1)), color-stop(100%, rgba(183,222,237,1))) !important;
+  background-image: -webkit-linear-gradient(left, rgba(183,222,237,1) 0%, rgba(33,180,226,1) 51%, rgba(113,206,239,1) 78%, rgba(183,222,237,1) 100%) !important;
+  background-image: -o-linear-gradient(left, rgba(183,222,237,1) 0%, rgba(33,180,226,1) 51%, rgba(113,206,239,1) 78%, rgba(183,222,237,1) 100%) !important;
+  background-image: -ms-linear-gradient(left, rgba(183,222,237,1) 0%, rgba(33,180,226,1) 51%, rgba(113,206,239,1) 78%, rgba(183,222,237,1) 100%) !important;
+  background-image: linear-gradient(to right, rgba(183,222,237,1) 0%, rgba(33,180,226,1) 51%, rgba(113,206,239,1) 78%, rgba(183,222,237,1) 100%) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', endColorstr='#b7deed', GradientType=1 ) !important;
 }
 
 .bg-grow-early {

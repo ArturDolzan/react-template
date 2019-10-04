@@ -32,9 +32,11 @@ class PageTitle extends Component {
                                 {subheading}
                             </div>
                         </div>
+                        
                     </div>
                     <div className="page-title-actions">
-                        <TitleComponent2/>
+                         {/* <TitleComponent2/> */}
+                        
                     </div>
                 </div>
             </div>
@@ -44,7 +46,7 @@ class PageTitle extends Component {
 
 const mapStateToProps = state => ({
     enablePageTitleIcon: state.ThemeOptions.enablePageTitleIcon,
-    enablePageTitleSubheading: state.ThemeOptions.enablePageTitleSubheading,
+    enablePageTitleSubheading: state.ThemeOptions.enablePageTitleSubheading
 });
 
 const mapDispatchToProps = dispatch => ({});

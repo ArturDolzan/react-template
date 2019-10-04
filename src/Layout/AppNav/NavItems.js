@@ -1,7 +1,7 @@
 export const MainNav = [
     {
         icon: 'pe-7s-rocket',
-        label: 'Dashboard Example',
+        label: 'Dashboard',
         to: '#/dashboards/basic',
     },
 ];
@@ -109,6 +109,20 @@ export const WidgetsNav = [
         to: '#/widgets/dashboard-boxes',
     },
 ];
+
+export const LoginNav = [
+    {
+        icon: 'pe-7s-users',
+        label: 'Login',
+        to: '#/login/logar',
+    },
+    {
+        icon: 'pe-7s-users',
+        label: 'Registrar',
+        to: '#/login/registrar',
+    },
+];
+
 export const ChartsNav = [
     {
         icon: 'pe-7s-graph2',
